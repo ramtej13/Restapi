@@ -1,10 +1,12 @@
 asgiref==3.2.10
 Django==3.1.2
 django-cors-headers==3.5.0
+django-filter==2.4.0
 django-seed==0.2.2
 djangorestframework==3.12.1
 djangorestframework-simplejwt==4.4.0
 Faker==4.14.0
+Markdown==3.3.3
 Pillow==8.0.1
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
@@ -12,6 +14,7 @@ PyJWT==1.7.1
 python-dateutil==2.8.1
 python-decouple==3.3
 pytz==2020.1
+simplejson==3.17.2
 six==1.15.0
 sqlparse==0.4.1
 text-unidecode==1.3
