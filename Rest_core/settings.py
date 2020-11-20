@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'django_seed',
     'accounts',
     'articls_basic',
-
+    'snippets'
 ]
 
 

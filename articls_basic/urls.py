@@ -1,6 +1,11 @@
 from .viewsapi import ArticleApiView,ArticleDetailApiView
-from django.urls import path
+from django.urls import path,include
 from .viewsgeneric import ArticlesGenericView,ArticlesDetailGenericView
+from rest_framework import routers
+from .viewsviewset import ArticleViewset
+
+router = routers.DefaultRouter()
+router.register('viesetArticle',ArticleViewset,basename="ArticleViewset")
 
 
 urlpatterns = [
@@ -14,6 +19,9 @@ urlpatterns = [
 
     # generic Api view
     path('gen/',ArticlesGenericView.as_view()),
-    path('gen/<id>/', ArticlesDetailGenericView.as_view())
+    path('gen/<id>/', ArticlesDetailGenericView.as_view()),
+
+
+    path('sss/',include(router.urls)),
 
 ]
